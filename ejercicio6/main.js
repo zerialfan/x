@@ -19,5 +19,7 @@ function forPair(array) {
 
 // Este comprueba cuales son pares y cuales impares a partir de map
 const isPair = array.filter(item=> item % 2 == 0)
+// item es un nombre aleatorio lo que realmente hace es que obtiene el residuo de dividir un numero entre 2
+// Por ejemplo 10/2 = 5 pero su residuo es 0 porque no deja decimales ni residuos
 
 console.log(isPair);

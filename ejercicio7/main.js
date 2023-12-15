@@ -3,7 +3,7 @@ array.push(40,50,60)
 array.push(10,20,30)
 
 //Primero teneremos que ordenar la lista 
-let newArray = array.sort((a,b)=> a-b)
+let newArray = array.sort((acc,next)=> acc-next)
 
 // El ejercicio requiere que obtenga la mediana de las listas
 // ojo cuando 
@@ -18,4 +18,5 @@ function isArrayPair(newArray) {
         return  newArray[Math.floor(indexList)]
     }
 }
-console.log(newArray,isArrayPair(newArray));
+
+console.log(isArrayPair(newArray), newArray);
