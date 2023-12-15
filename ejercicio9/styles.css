@@ -1,0 +1,67 @@
+:root {
+    --primary-color: rgba(40, 37, 42, 1);
+    --secondary-color: rgba(107, 15, 143, 1);
+    --tertiary-color: rgba(83, 34, 131, 1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(201deg, var(--primary-color) 5%, var(--secondary-color) 51%, var(--tertiary-color) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+form {
+    height: 84vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+input::placeholder {
+    text-align: center;
+    font-size: 12px;
+}
+
+input, #btn {
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+#btn {
+    min-width: 24%;
+    max-width: 120px;
+    background: greenyellow;
+}
+#arrayDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 90%; /* Ajusta esto según tus necesidades */
+    margin-top: 20px;
+}
+
+.number-div {
+    margin: 8px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    display: inline-block;
+}
